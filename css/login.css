@@ -1,0 +1,58 @@
+body{
+  background: #F5F5F6;
+}
+.login{
+  width: 380px;
+  border: 1px solid #ededed;
+  margin: 80px auto;
+  background: #fff;
+}
+.login-nav{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.login-nav li{
+  flex: 1;
+  background: #F5F5F5;
+  height: 60px;
+ line-height: 60px;
+}
+.login-nav li.active{
+  background: #fff;
+}
+.login-nav li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.login-nav li>a{
+text-decoration: none;
+}
+.tab-content form{
+  padding: 40px;
+  color: #777;
+}
+.tab-content form input{
+height: 40px;
+}
+.login .checkbox input[type="checkbox"]{
+  margin-top: -10px;
+}
+.login .tab-content .btn{
+  background: #313131;
+  width: 100%;
+  border-radius: 0px;
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.login .getback{
+  margin: 10px 0px;
+  font-size: 12px;
+}
+.login .getback>span{
+  padding: 0px 8px;
+}

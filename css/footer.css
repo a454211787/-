@@ -1,0 +1,20 @@
+
+.footer{
+  background: #272C33;
+  padding-bottom: 15px;
+}
+.footer a{
+  color:#9D9E9F ;
+  font-size: 12px;
+  margin: 0px 5px;
+}
+
+.footer p{
+  color:#6F7071 ;
+  text-align: center;
+  font-size: 10px;
+  line-height: 24px;
+}
+.footer>div>p:first-of-type{
+  line-height: 60px;
+}

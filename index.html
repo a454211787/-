@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/pubHtml.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap-paginator.js"></script>
+  </head>
+
+  <body>
+    <!-- 头部 -->
+    <header></header>
+    <!-- banner -->
+    <div class="container-fluid banner">
+      <div class="w">
+        <img src="./img/banner.jpg" alt="" />
+      </div>
+    </div>
+    <!-- content -->
+    <div class="w content">
+      <ul>
+        <!-- <li>
+          <img src="./img/k1.jpg" alt="" />
+          <div>
+            <h4 class="title">课程标题</h4>
+            <p class="clearfix"><span>#UI设计</span><span>3章15节</span></p>
+            <p class="clearfix"><span>150</span><span>￥99</span></p>
+          </div>
+        </li> -->
+      </ul>
+      <!-- 分页 -->
+      <div class="container">
+        <div class="page-content">
+          <ul id="page"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- footers -->
+    <footer></footer>
+
+    <!-- 登陆注册模态框 -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="exampleModalLabel">登陆</h4>
+          </div>
+          <div class="modal-body">
+            <form id="logform">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="recipient-name"
+                  name="username"
+                  placeholder="请输入手机号或邮箱"
+                />
+              </div>
+              <div class="form-group">
+                <label for="recipient-pass" class="control-label"></label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="recipient-pass"
+                  name="password"
+                  placeholder="请输入6-18位密码"
+                />
+              </div>
+              <p class="clearfix">
+                <a href="#" class="pull-left">手机验证码登陆</a>
+                <a href="#" class="pull-right">忘记密码?</a>
+              </p>
+              <input type="hidden" value="2" name="level" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" id="login">登陆</button>
+            <p class="text-center">
+              没有账号？去<a href="/login.html?do=reg">注册</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- 课程数据模板 -->
+  <script type="text/html" id="clssList">
+    {{if classdata}}
+    {{each classdata}}
+    <li>
+      <img src="{{$value.imageurl}}" alt="" />
+      <span class="clstype">{{$value.type}}</span>
+      <div>
+        <h4 class="title">{{$value.classname}}</h4>
+        <p class="clearfix"><span>{{$value.subjectname}}</span><span></span></p>
+        <p class="clearfix"><span>{{$value.learn_cnt}}</span><span>{{$value.price}}</span></p>
+      </div>
+    </li>
+    {{/each}}
+    {{/if}}
+  </script>
+</html>

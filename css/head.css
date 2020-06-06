@@ -1,0 +1,196 @@
+html,
+body {
+  font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+}
+header {
+  background: #fff;
+  box-shadow: 2px 2px 4px #ccc;
+}
+dl,
+dt,
+dd,
+ul,
+li,
+p {
+  margin: 0px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+header .container-fluid {
+  padding: 0px 20px;
+}
+.myflex {
+  display: flex;
+  float: left;
+}
+.dlflex {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
+  padding: 6px;
+  padding-top: 0px;
+  border-left: #fff solid 3px;
+}
+
+.dlflex:hover {
+  background: #f2f6f9;
+  border-left: #3bb4f2 solid 3px;
+}
+
+.myline {
+  color: #999;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+.site-title {
+  font-size: 14px;
+}
+
+.navflex {
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  height: 56px;
+}
+
+.navflex > li {
+  margin: 0px 10px;
+}
+.navflex > li > a {
+  padding: 10px;
+  border-left: #fff 3px solid;
+}
+.navflex > li > a:hover {
+  background: #f2f6f9;
+  border-left: #3bb4f2 3px solid;
+}
+.navflex > li > a.navcurrent {
+  background: #f2f6f9;
+  border-bottom: #3bb4f2 3px solid;
+  border-left: #fff 3px solid;
+}
+.navflex > li > a.navcurrent:hover {
+  border-left: #3bb4f2 3px solid;
+}
+.navflex > li {
+  position: relative;
+}
+.navflex > li:hover ul {
+  display: block;
+}
+.navflex > li > ul {
+  position: absolute;
+  background: #ccc;
+  width: 300px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  border-radius: 4px;
+  padding-left: 0px;
+  background: #fff;
+  overflow: hidden;
+  display: none;
+}
+
+.navflex > li > ul > li {
+  background: #fff;
+  display: table;
+  height: 100px;
+  width: 100%;
+}
+.navflex > li > ul > li:nth-child(even) {
+  background: #eefaf5;
+}
+.navflex > li > ul > li:hover {
+  background: #ddfac1;
+}
+.navflex > li > ul > li > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.navflex > li > ul > li > div.nav-nav-img {
+  padding: 0px 15px 0px 20px;
+}
+.navflex > li > ul > li > div.nav-nav-img > a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  background: #999;
+  border-radius: 50%;
+  text-align: center;
+}
+.navflex > li > ul > li > div.nav-nav-body > h4 {
+  margin-bottom: 5px;
+}
+.myseach {
+  margin-top: 10px;
+  float: right;
+}
+.myput {
+  margin-top: 6px;
+  text-align: right;
+}
+.myput span {
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* ??? */
+.modal.in .modal-dialog {
+  transform: translate(0, 30%);
+  width: 340px;
+}
+.modal-dialog .modal-footer .btn {
+  width: 100%;
+  background: #ab96fb;
+  color: #f2f6f9;
+}
+.modal-dialog .modal-body .form-group {
+  margin: 0px;
+}
+.modal-dialog .modal-body {
+  padding: 0px 20px 10px;
+}
+.modal-dialog h4.modal-title {
+  font-size: 18px;
+}
+.modal-dialog .modal-body p a {
+  font-size: 10px;
+  padding: 10px 0px;
+  font-family: '??';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.modal-dialog .modal-footer p {
+  font-size: 10px;
+  padding: 10px 0px 0px;
+  font-family: '??';
+  letter-spacing: 1px;
+}
+.modal-dialog .modal-footer p a {
+  margin-left: 5px;
+}
+.modal-dialog .modal-header {
+  padding: 20px 20px 10px;
+  border: 0px;
+}
+
+#logout {
+  padding: 0px 10px;
+}
